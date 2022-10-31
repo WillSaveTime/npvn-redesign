@@ -1,0 +1,93 @@
+main-section__status-wrapper:after {
+  content: "";
+  display: block;
+  height: 100%;
+  background: rgba(254, 87, 63, 0.1);
+  left: 0;
+  top: 0;
+  width: 1000%;
+  position: absolute;
+  transform: translateX(-100%);
+}
+.why-section {
+  height: 100%;
+  box-sizing: border-box;
+  background: white;
+  box-shadow: 20px 20px 100px rgb(55 84 170 / 6%);
+  border-radius: 20px;
+  padding: 40px 32px 70px;
+  transition: all 0.2s ease-out 0s;
+}
+.why-section:hover {
+  transform: translateY(-10px);
+  margin-top: -8px;
+  margin-bottom: 8px;
+  box-shadow: 20px 20px 100px rgb(55 84 170 / 16%);
+}
+.main-section__scale-circle-wrapper {
+  position: absolute;
+  top: 206px;
+  width: 400px;
+  height: 400px;
+  z-index: 0;
+}
+.main-section__scale-circle {
+  display: block;
+  border: 4px solid rgba(33, 216, 122, 0.1);
+}
+.main-section__scale-circle {
+  /* display: none; */
+  border: 4px solid rgba(0, 122, 255, 0.1);
+  position: absolute;
+  border-radius: 100%;
+  animation: innerCircleScale 1.3s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32);
+  pointer-events: none;
+}
+.order-now {
+  border-radius: 100%;
+  padding: 50px;
+}
+.order-now-effect {
+  /* border: 4px solid rgba(174, 210, 249, 0.1);
+  border-radius: 100%;
+  padding: 10px;
+  animation: innerCircleScale 4s infinite cubic-bezier(0.36, 0.11, 0.89, 0.32); */
+}
+@keyframes innerCircleScale {
+  from {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+  to {
+    top: -150%;
+    left: -150%;
+    right: -150%;
+    bottom: -150%;
+    opacity: 0.3;
+  }
+}
+.shadow-black {
+  box-shadow: 0px 30px 50px rgba(12, 12, 12, 0.35);
+  padding: 35px;
+  margin: 55px;
+  transform: rotate(45deg);
+  border-radius: 35px;
+}
+.shadow-black svg{
+    transform: rotate(-45deg);
+}
+.shadow-black:hover{
+    cursor: pointer;
+    box-shadow: 0px 30px 50px rgba(21, 21, 21, 0.65)
+}
+
+/* .react-multiple-carousel__arrow--right {
+  margin-right: -100px;
+  z-index: 10000;
+}
+.react-multiple-carousel__arrow--left {
+  margin-left: -100px;
+} */

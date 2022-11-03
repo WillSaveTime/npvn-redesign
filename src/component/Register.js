@@ -1,3 +1,4 @@
+import React from "react";
 import {Row, Col,Card,Button} from 'react-bootstrap';
 import { BsFacebook, BsYoutube,BsLinkedin, BsTwitter, BsSkype, BsGoogle } from "react-icons/bs";
 

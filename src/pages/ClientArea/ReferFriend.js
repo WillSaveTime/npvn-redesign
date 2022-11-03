@@ -1,3 +1,5 @@
+import React from "react";
+
 function PreferFriend(){
     return(
         <div className="flex flex-row py-3">

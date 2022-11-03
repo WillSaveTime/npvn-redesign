@@ -1,3 +1,5 @@
+import React from "react";
+
 function PortForwarding(){
     return (
         <div className="flex flex-col">

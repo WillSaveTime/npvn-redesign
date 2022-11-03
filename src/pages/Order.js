@@ -1,4 +1,6 @@
+import React from "react";
 import {} from 'react-icons/bs'
+
 function Order() {
   return (
     <div className="container mt-20">

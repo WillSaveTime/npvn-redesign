@@ -1,13 +1,12 @@
-
-import Carousel from "react-multi-carousel";
-import {Row, Col,Card,Button} from 'react-bootstrap';
-import {animations} from 'react-animation';
-import {bounce} from 'react-animation';
-import {Animated} from "react-animated-css";
+import React from "react";
+import { Animated } from "react-animated-css";
+import { animations } from 'react-animation';
+import { Card, Col, Row } from 'react-bootstrap';
 import { BsFillBookmarkPlusFill } from "react-icons/bs";
+import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import item from '../assets/images/item.png'
-import "./Home.css"
+import item from '../assets/images/item.png';
+import "./Home.css";
 
 const responsive = {
   superLargeDesktop: {

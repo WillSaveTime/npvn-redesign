@@ -1,5 +1,6 @@
-import {Row, Col,Card,Button} from 'react-bootstrap';
-import { BsFacebook, BsYoutube,BsLinkedin, BsTwitter, BsSkype, BsGoogle } from "react-icons/bs";
+import React from "react";
+import { Button, Col, Row } from 'react-bootstrap';
+import { BsFacebook, BsGoogle, BsLinkedin, BsSkype, BsTwitter, BsYoutube } from "react-icons/bs";
 
 
 const Footer = () => {

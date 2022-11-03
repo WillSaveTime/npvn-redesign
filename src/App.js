@@ -8,11 +8,11 @@ import Home from "./pages/Home"
 import Order from "./pages/Order"
 import Faq from "./pages/Faq"
 import ContactUs from "./pages/ContactUs"
-import ClientArea from "./pages/Client Area";
+import ClientArea from "./pages/ClientArea";
 import "aos/dist/aos.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import './App.sass'
+// import './App.sass'
 import Footer from "./component/Footer";
 
 function App() {

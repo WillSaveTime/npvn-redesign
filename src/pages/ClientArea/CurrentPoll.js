@@ -1,3 +1,5 @@
+import React from "react";
+
 function CurrentPull(){
     return(
         <div className="grid grid-cols-2 grid-flow-row gap-4">

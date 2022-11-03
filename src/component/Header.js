@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import Modal from 'react-bootstrap/Modal';
 
 const Header = () => {
-  
+
   const [login_show, setLoginShow] = useState(false);
   const [register_show, setRegisterShow] = useState(false);
 
-  const handleLogin = () => {setLoginShow(!login_show);}
-  const handleRegister = () => {setRegisterShow(!register_show);}
+  const handleLogin = () => { setLoginShow(!login_show); }
+  const handleRegister = () => { setRegisterShow(!register_show); }
 
   return (
     <>

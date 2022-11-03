@@ -1,3 +1,5 @@
+import React from "react";
+
 function RenewAccount(){
     return(
         <div className="flex flex-col items-center">

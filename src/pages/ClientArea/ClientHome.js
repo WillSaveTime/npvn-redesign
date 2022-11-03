@@ -1,3 +1,5 @@
+import React from "react";
+
 function ClientHome(){
     return (
       <div className="bg-gray-100">

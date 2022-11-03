@@ -12,6 +12,7 @@
     "formik": "^2.2.9",
     "google-maps-react": "^2.0.6",
     "mdbreact": "^4.6.1",
+    "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-animated-css": "^1.2.1",
     "react-animation": "^1.2.2",

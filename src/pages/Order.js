@@ -1,8 +1,8 @@
-
+import {} from 'react-icons/bs'
 function Order() {
   return (
-    <div className="container  mx-auto mt-24">
-      <div className="" data-aos="fade-down">
+    <div className="container mt-20">
+      <div className="mx-5" data-aos="fade-down">
         <div className=" text-gray-900 bg-[#21E9D8] bg-opacity-[0.1] rounded-2xl rounded-b-2xl p-4">
           <div className="text-2xl text-purple-800 font-bold">Order Now</div>
           <div className=" text-lg mt-4">nVpn: easy to use and offers connections through our servers located in many different countries.</div>
@@ -10,7 +10,7 @@ function Order() {
             Important note: New 'first time' Paypal buyers have a 2 days Pending time!s</div>
         </div>
       </div>
-      <div className="my-24">
+      <div className="my-24 mx-5">
         <table className="table text-center" data-aos="fade-up">
           <thead>
             <tr>

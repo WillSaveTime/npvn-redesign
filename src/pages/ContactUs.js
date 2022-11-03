@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 
 import AppSpinner from '../component/loading/AppSpinner';
 import MapSection from '../component/map/MapSection';
@@ -19,11 +19,11 @@ const ContactUs = () => {
       comment: '',
     },
     validationSchema: Yup.object({
-      firstName: Yup.string().required('Required'),
-      lastName: Yup.string().required('Required'),
-      email: Yup.string().email('Invalid email address').required('Required'),
-      mobile: Yup.number().required('Required'),
-      comment: Yup.string().required('Required'),
+      // firstName: Yup.string().required('Required'),
+      // lastName: Yup.string().required('Required'),
+      // email: Yup.string().email('Invalid email address').required('Required'),
+      // mobile: Yup.number().required('Required'),
+      // comment: Yup.string().required('Required'),
     }),
     onSubmit: values => {
       const { firstName, lastName, email, mobile, comment } = values;
@@ -31,7 +31,7 @@ const ContactUs = () => {
   });
 
   return (
-    <div className="container position-relative mt-16">
+    <div className="container position-relative mt-16" style={{marginBottom:"50px"}}>
       <div className="text-3xl md:text-5xl font-bold text-center text-[#372580]  mb-24" data-aos="fade-up">Contact us</div>
       <form onSubmit={formik.handleSubmit}>
         <div className="row ">
@@ -53,12 +53,13 @@ const ContactUs = () => {
                   id="firstName"
                   type="text"
                   placeholder="First Name"
-                  required
+                  // required
                   className={`form-control fw-400 fs-0p875 oxford-blue app-form-control ${formik.touched.firstName && formik.errors.firstName && "app-form-error"}`}
                   value={formik.values.firstName}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   disabled={loading}
+                  style={{height:"55px"}}
                 />
                 {formik.touched.firstName && formik.errors.firstName &&
                   <span className="fw-300 fs-0p75 red-orange">{formik.errors.firstName}</span>
@@ -70,12 +71,13 @@ const ContactUs = () => {
                   id="lastName"
                   type="text"
                   placeholder="Last Name"
-                  required
+                  // required
                   className={`form-control fw-400 fs-0p875 oxford-blue app-form-control ${formik.touched.lastName && formik.errors.lastName && "app-form-error"}`}
                   value={formik.values.lastName}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   disabled={loading}
+                  style={{height:"55px"}}
                 />
                 {formik.touched.lastName && formik.errors.lastName &&
                   <span className="fw-300 fs-0p75 red-orange">{formik.errors.lastName}</span>
@@ -87,12 +89,13 @@ const ContactUs = () => {
                   id="email"
                   type="email"
                   placeholder="Email"
-                  required
+                  // required
                   className={`form-control fw-400 fs-0p875 oxford-blue app-form-control ${formik.touched.email && formik.errors.email && "app-form-error"}`}
                   value={formik.values.email}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   disabled={loading}
+                  style={{height:"55px"}}
                 />
                 {formik.touched.email && formik.errors.email &&
                   <span className="fw-300 fs-0p75 red-orange">{formik.errors.email}</span>
@@ -104,12 +107,13 @@ const ContactUs = () => {
                   id="mobile"
                   type="number"
                   placeholder="Mobile"
-                  required
+                  // required
                   className={`form-control fw-400 fs-0p875 oxford-blue app-form-control ${formik.touched.mobile && formik.errors.mobile && "app-form-error"}`}
                   value={formik.values.mobile}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   disabled={loading}
+                  style={{height:"55px"}}
                 />
                 {formik.touched.mobile && formik.errors.mobile &&
                   <span className="fw-300 fs-0p75 red-orange">{formik.errors.mobile}</span>
@@ -122,7 +126,6 @@ const ContactUs = () => {
                   type="text"
                   placeholder="Comments"
                   rows="7"
-                  required
                   className={`form-control fw-400 fs-0p875 oxford-blue app-form-control ${formik.touched.comment && formik.errors.comment && "app-form-error"}`}
                   value={formik.values.comment}
                   onChange={formik.handleChange}
@@ -136,7 +139,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <button type="submit" className="text-white rounded-lg border-[#fe7a3c] px-6 py-1 bg-[#fe7a3c]" disabled={loading}>Submit</button>
+        <button type="submit" className="text-white rounded-lg border-[#fe7a3c] px-6 py-1 bg-[#0f0f0f]" disabled={loading} style={{height:"50px",marginTop:"10px",width:"300px",marginLeft:"5px"}}>Submit</button>
       </form>
       {loading && <AppSpinner absolute />}
     </div>
